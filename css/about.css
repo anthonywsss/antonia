@@ -1,0 +1,126 @@
+@font-face 
+{
+  font-family: playfairdisplayReguler;
+  src: url('../fonts/PlayfairDisplay-Regular.ttf'); 
+}
+  
+@font-face 
+{
+  font-family: playfairdisplayBold;
+  src: url('../fonts/PlayfairDisplay-Bold.ttf'); 
+}
+  
+@font-face
+{
+  font-family: muliReguler;
+  src: url('../fonts/muli.regular.ttf'); 
+}
+  
+@font-face
+{
+  font-family: muliSemibold;
+  src: url('../fonts/Muli-SemiBold.ttf'); 
+}
+  
+@font-face 
+{
+  font-family: muliBold;
+  src: url('../fonts/Muli-Bold.ttf'); 
+}@font-face 
+{
+  font-family: playfairdisplayReguler;
+  src: url('../fonts/PlayfairDisplay-Regular.ttf'); 
+}
+  
+@font-face 
+{
+  font-family: playfairdisplayBold;
+  src: url('../fonts/PlayfairDisplay-Bold.ttf'); 
+}
+  
+@font-face
+{
+  font-family: muliReguler;
+  src: url('../fonts/muli.regular.ttf'); 
+}
+  
+@font-face
+{
+  font-family: muliSemibold;
+  src: url('../fonts/Muli-SemiBold.ttf'); 
+}
+  
+@font-face 
+{
+  font-family: muliBold;
+  src: url('../fonts/Muli-Bold.ttf'); 
+}
+
+.aboutUs
+{
+    padding-top: 120px;
+}
+
+#aboutUs
+{
+    font-family: playfairdisplayBold;
+    font-size: 45px;
+    color: #1B2437;
+    margin-bottom: -5px;
+}
+
+#jargon
+{
+    font-family: muliReguler;
+    color: #8E8E93;
+    font-size: 20px;
+}
+
+#about1
+{
+    width: 100%;
+    height: auto;
+}
+
+#divbout1
+{
+    padding-top: 40px;
+}
+
+.ourVision
+{
+    font-family: playfairdisplayBold;
+    font-size: 50px;
+    color: #1B2437;
+}
+
+#descVision
+{
+    font-family: muliReguler;
+    color: #1B2437;
+}
+
+.divbout2
+{
+    padding-top: 85px;
+}
+
+#about2
+{
+    width: 90%;
+    height: 98%;
+}
+
+#comPro
+{
+  font-family: playfairdisplayBold;
+  font-size: 45px;
+  color: #1B2437;
+  margin-bottom: 30px;
+}
+
+.video
+{
+  padding-top: 70px;
+  margin-bottom: 80px;
+}

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Add Product</title>
+
+	<!-- Required meta tags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--Favicon-->
+	<link rel="icon" type="image/png" href="images/favicon.png" />
+
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css">
+
+	<!--Library-->
+	<link rel="stylesheet" type="text/css" href="css/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/materialdesign/css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+	<link rel="stylesheet" type="text/css" href="css/animsition/dist/css/animsition.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!--Styling-->
+	<link rel="stylesheet" type="text/css" href="css/addproduct.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body class="animsition">
+
+	<div class="containerOpening">
+
+		<div class="topBar">
+			<div class="kontenTop">
+				<p class="text-center" id="texttopbar">Free shipping for standard order over Rp.30.000</p>
+			</div>
+		</div>
+
+		<div class="menuNavbar">
+			<nav class="menu2Navbar container">
+
+				<a href="index.html" class="logo">
+					<img src="images/logo.png" alt="IMG-LOGO">
+				</a>
+
+				<div class="navbarNavbar">
+					<ul class="navbar">
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+
+						<li>
+							<a href="product.html">Shop</a>
+						</li>
+
+						<li>
+							<a href="about.html">About Us</a>
+						</li>
+
+						<li class="activeNavbar">
+							<a href="contact.html">Add Product</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="fitur flex-w flex-r-m">
+					<div class="search">
+						<i class="fa fa-search"></i>
+					</div>
+
+					<div class="user">
+						<i class="fa fa-user"></i>
+					</div>
+
+					<a href="#" class="shopBag">
+						<i class="fa fa-shopping-bag"></i>
+					</a>
+				</div>
+			</nav>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="addProd">
+			<p>
+				Add Product
+			</p>
+		</div>
+
+		<form id="addProduct">
+			<div class="form-group">
+				<label for="addProduct" class="formJudul">Product Name</label>
+				<input id="namaProduk" class="form-control" type="text" placeholder="Example: Men's Shoes (Product Type / Category) + Brand + Black Canvas (Specification)" required>
+				<small id="textProduct" class="form-text text-muted">Name min. 5 words, consisting of the type of
+					product, brand, and descriptions such as color, material or type</small>
+			</div>
+
+			<div class="form-group">
+				<label for="addDescription" class="formDeskripsi">Product Description</label>
+				<textarea class="form-control" id="prodDesc" rows="10"
+					placeholder="Antonia Men's Sneakers Black Canvas C28B Series
+- Simple model
+- Comfortable to use
+- Available in black
+- PVC sole (injection shoes) which is comfortable and durable for everyday use
+					
+Material:
+Upper: Semi Leather (skin is not cracked)
+Sole: Premium Rubber Sole
+				
+Size
+39: 25.5 cm
+40: 26 cm
+41: 26.5 cm
+42: 27 cm
+43: 27.5 - 28 cm
+					
+Limited edition from Antonia with new and trendy style for you. Designed to be used in various events. It is very comfortable to wear so it can support your appearance and confidence. Buy now before they run out!"></textarea>
+				<small id="emailHelp" class="form-text text-muted">Make sure the product description contains
+					specifications, sizes, materials, validity period, and others. The more details, the more useful it
+					is for the buyer.</small>
+			</div>
+		</form>
+
+			<div class="variant">
+
+				
+				<div class="row">
+
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label for="productImg" class="formImg">Upload The Product Image</label>
+							<input type="file" class="form-control-file" id="file" accept="image/*">
+							<label for="file" id="labelAdd">
+								<span class="material-icons">
+									add_photo_alternate
+								</span>
+								&nbsp;
+								Add Product Image
+							</label>
+			
+							<small id="textUpload" class="form-text text-muted">Upload Minimum 3 Product Image</small>
+						</div>			
+					</div>
+
+						<div class="col-lg-6">
+							<label for="variantform" class="formVariant">Add Variant</label>
+							<div class="row">	
+								<div class="col-lg-12">
+									<button onclick="size()" type="submit" class="buttonVariant">
+										Add Size
+									</button>
+				
+										<button onclick="color()" type="submit" class="buttonVariant">
+											Add Color
+										</button>
+								</div>
+							</div>
+						</div>
+
+				</div>
+			</div>
+
+		<form id="formharga">
+			<div class="row">
+				<div class="col-lg-4">
+					<label for="addPrice" class="formPrice" min="1" step="any">Price</label>
+					<div class="mb-3">
+						<div class="input-group is-invalid">
+							<div class="input-group-prepend">
+								<span class="input-group-text" id="validatedInputGroupPrepend">Rp</span>
+							</div>
+							<input id="harga" type="number" min="100" class="form-control" placeholder="Enter the Price">
+						</div>
+						<small id="textPrice" class="form-text text-muted">The minimum product price is Rp. 100</small>
+					</div>
+				</div>
+			</div>
+		</form>
+
+		<div class="tombol">
+			<div class="row">
+				<div class="col-lg-12">
+					<button onclick="validation()" type="submit" class="buttonSave">
+						Add Product
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="bgnyafooter">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2">
+				</div>
+
+				<div class="col-lg-8 teksKopirait">
+					<p class="allrait">© Antonia Store all rights reserved</p>
+				</div>
+
+				<div class="col-lg-2">
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+		<script src="js/sweet alert/dist/sweetalert2.all.min.js"></script>
+		<script src="js/sweet alert/dist/sweetalert2.min.js"></script>
+		<script src="css/bootstrap/js/jquery-3.3.1.min.js"></script>
+		<script src="css/bootstrap/js/bootstrap.js"></script>
+
+		<script src="css/animsition/dist/js/animsition.min.js"></script>
+
+		<script src="js/slick-custom.js"></script>
+
+		<script src="js/main.js"></script>
+
+</body>
+
+</html>
